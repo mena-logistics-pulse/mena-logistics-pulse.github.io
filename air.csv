@@ -1,0 +1,162 @@
+iso3,country,group,year,air_freight_mn_tkm
+ARE,"United Arab Emirates",GCC,2023,13566.16
+ARE,"United Arab Emirates",GCC,2022,12994.52
+ARE,"United Arab Emirates",GCC,2021,15300.73
+ARE,"United Arab Emirates",GCC,2020,12171.56
+ARE,"United Arab Emirates",GCC,2019,14765.60
+ARE,"United Arab Emirates",GCC,2018,15962.90
+ARE,"United Arab Emirates",GCC,2017,16616.24
+ARE,"United Arab Emirates",GCC,2016,16138.87
+ARE,"United Arab Emirates",GCC,2015,15962.69
+BHR,"Bahrain",GCC,2023,895.44
+BHR,"Bahrain",GCC,2022,899.09
+BHR,"Bahrain",GCC,2021,523.30
+BHR,"Bahrain",GCC,2020,191.96
+BHR,"Bahrain",GCC,2019,311.15
+BHR,"Bahrain",GCC,2018,420.98
+BHR,"Bahrain",GCC,2017,390.39
+BHR,"Bahrain",GCC,2016,387.31
+BHR,"Bahrain",GCC,2015,240.11
+CHN,"China",Benchmark,2023,26170.37
+CHN,"China",Benchmark,2022,18964.44
+CHN,"China",Benchmark,2021,20961.21
+CHN,"China",Benchmark,2020,19264.24
+CHN,"China",Benchmark,2019,25394.59
+CHN,"China",Benchmark,2018,25256.21
+CHN,"China",Benchmark,2017,23323.61
+CHN,"China",Benchmark,2016,21304.59
+CHN,"China",Benchmark,2015,19805.63
+DZA,"Algeria",Other MENA,2023,8.58
+DZA,"Algeria",Other MENA,2022,9.76
+DZA,"Algeria",Other MENA,2021,12.69
+DZA,"Algeria",Other MENA,2020,15.64
+DZA,"Algeria",Other MENA,2019,25.64
+DZA,"Algeria",Other MENA,2018,28.28
+DZA,"Algeria",Other MENA,2017,24.80
+DZA,"Algeria",Other MENA,2016,21.59
+DZA,"Algeria",Other MENA,2015,21.90
+EGY,"Egypt",Other MENA,2023,492.65
+EGY,"Egypt",Other MENA,2022,512.37
+EGY,"Egypt",Other MENA,2021,589.48
+EGY,"Egypt",Other MENA,2020,438.91
+EGY,"Egypt",Other MENA,2019,483.41
+EGY,"Egypt",Other MENA,2018,437.63
+EGY,"Egypt",Other MENA,2017,403.83
+EGY,"Egypt",Other MENA,2016,374.36
+EGY,"Egypt",Other MENA,2015,377.36
+JOR,"Jordan",Other MENA,2023,110.06
+JOR,"Jordan",Other MENA,2022,120.74
+JOR,"Jordan",Other MENA,2021,103.32
+JOR,"Jordan",Other MENA,2020,74.66
+JOR,"Jordan",Other MENA,2019,153.57
+JOR,"Jordan",Other MENA,2018,175.84
+JOR,"Jordan",Other MENA,2017,158.96
+JOR,"Jordan",Other MENA,2016,144.21
+JOR,"Jordan",Other MENA,2015,169.11
+KWT,"Kuwait",GCC,2023,331.17
+KWT,"Kuwait",GCC,2022,261.90
+KWT,"Kuwait",GCC,2021,200.16
+KWT,"Kuwait",GCC,2020,119.72
+KWT,"Kuwait",GCC,2019,364.65
+KWT,"Kuwait",GCC,2018,392.36
+KWT,"Kuwait",GCC,2017,309.86
+KWT,"Kuwait",GCC,2016,223.01
+KWT,"Kuwait",GCC,2015,216.34
+LBN,"Lebanon",Other MENA,2023,34.40
+LBN,"Lebanon",Other MENA,2022,36.23
+LBN,"Lebanon",Other MENA,2021,22.24
+LBN,"Lebanon",Other MENA,2020,19.12
+LBN,"Lebanon",Other MENA,2019,51.70
+LBN,"Lebanon",Other MENA,2018,56.57
+LBN,"Lebanon",Other MENA,2017,53.39
+LBN,"Lebanon",Other MENA,2016,45.56
+LBN,"Lebanon",Other MENA,2015,54.08
+MAR,"Morocco",Other MENA,2023,92.64
+MAR,"Morocco",Other MENA,2022,93.22
+MAR,"Morocco",Other MENA,2021,58.89
+MAR,"Morocco",Other MENA,2020,46.24
+MAR,"Morocco",Other MENA,2019,102.19
+MAR,"Morocco",Other MENA,2018,97.71
+MAR,"Morocco",Other MENA,2017,77.94
+MAR,"Morocco",Other MENA,2016,53.83
+MAR,"Morocco",Other MENA,2015,52.91
+MEA,"Middle East & North Africa (WB region)",Benchmark,2023,32219.37
+MEA,"Middle East & North Africa (WB region)",Benchmark,2022,31778.30
+MEA,"Middle East & North Africa (WB region)",Benchmark,2021,34709.81
+MEA,"Middle East & North Africa (WB region)",Benchmark,2020,28403.58
+MEA,"Middle East & North Africa (WB region)",Benchmark,2019,32883.09
+MEA,"Middle East & North Africa (WB region)",Benchmark,2018,33284.90
+MEA,"Middle East & North Africa (WB region)",Benchmark,2017,31814.23
+MEA,"Middle East & North Africa (WB region)",Benchmark,2016,28994.57
+MEA,"Middle East & North Africa (WB region)",Benchmark,2015,26985.19
+NLD,"Netherlands",Benchmark,2023,3285.75
+NLD,"Netherlands",Benchmark,2022,3366.76
+NLD,"Netherlands",Benchmark,2021,4346.40
+NLD,"Netherlands",Benchmark,2020,4145.02
+NLD,"Netherlands",Benchmark,2019,5656.44
+NLD,"Netherlands",Benchmark,2018,5886.51
+NLD,"Netherlands",Benchmark,2017,5855.48
+NLD,"Netherlands",Benchmark,2016,4745.96
+NLD,"Netherlands",Benchmark,2015,5292.79
+OMN,"Oman",GCC,2023,542.34
+OMN,"Oman",GCC,2022,281.60
+OMN,"Oman",GCC,2021,254.46
+OMN,"Oman",GCC,2020,51.92
+OMN,"Oman",GCC,2019,566.92
+OMN,"Oman",GCC,2018,510.43
+OMN,"Oman",GCC,2017,434.92
+OMN,"Oman",GCC,2016,425.20
+OMN,"Oman",GCC,2015,412.23
+QAT,"Qatar",GCC,2023,13926.60
+QAT,"Qatar",GCC,2022,14087.19
+QAT,"Qatar",GCC,2021,15861.65
+QAT,"Qatar",GCC,2020,13543.51
+QAT,"Qatar",GCC,2019,12739.81
+QAT,"Qatar",GCC,2018,12666.71
+QAT,"Qatar",GCC,2017,10970.09
+QAT,"Qatar",GCC,2016,9206.17
+QAT,"Qatar",GCC,2015,7563.31
+SAU,"Saudi Arabia",GCC,2023,1036.79
+SAU,"Saudi Arabia",GCC,2022,1438.61
+SAU,"Saudi Arabia",GCC,2021,678.56
+SAU,"Saudi Arabia",GCC,2020,581.52
+SAU,"Saudi Arabia",GCC,2019,2043.25
+SAU,"Saudi Arabia",GCC,2018,1085.47
+SAU,"Saudi Arabia",GCC,2017,867.64
+SAU,"Saudi Arabia",GCC,2016,833.99
+SAU,"Saudi Arabia",GCC,2015,826.83
+SGP,"Singapore",Benchmark,2023,7604.21
+SGP,"Singapore",Benchmark,2022,4695.58
+SGP,"Singapore",Benchmark,2021,3666.85
+SGP,"Singapore",Benchmark,2020,3019.93
+SGP,"Singapore",Benchmark,2019,6411.99
+SGP,"Singapore",Benchmark,2018,6947.44
+SGP,"Singapore",Benchmark,2017,5062.99
+SGP,"Singapore",Benchmark,2016,6695.81
+SGP,"Singapore",Benchmark,2015,6331.93
+TUN,"Tunisia",Other MENA,2023,10.96
+TUN,"Tunisia",Other MENA,2021,5.60
+TUN,"Tunisia",Other MENA,2020,6.55
+TUN,"Tunisia",Other MENA,2019,13.09
+TUN,"Tunisia",Other MENA,2018,13.23
+TUN,"Tunisia",Other MENA,2017,12.12
+TUN,"Tunisia",Other MENA,2016,8.10
+TUN,"Tunisia",Other MENA,2015,10.35
+USA,"United States",Benchmark,2023,42762.86
+USA,"United States",Benchmark,2022,45972.79
+USA,"United States",Benchmark,2021,46004.65
+USA,"United States",Benchmark,2020,40793.09
+USA,"United States",Benchmark,2019,42498.26
+USA,"United States",Benchmark,2018,42985.30
+USA,"United States",Benchmark,2017,41591.55
+USA,"United States",Benchmark,2016,38657.92
+USA,"United States",Benchmark,2015,37866.22
+WLD,"World",Benchmark,2023,213781.67
+WLD,"World",Benchmark,2022,202493.42
+WLD,"World",Benchmark,2021,219227.33
+WLD,"World",Benchmark,2020,182526.18
+WLD,"World",Benchmark,2019,219524.45
+WLD,"World",Benchmark,2018,222156.70
+WLD,"World",Benchmark,2017,213628.65
+WLD,"World",Benchmark,2016,195588.28
+WLD,"World",Benchmark,2015,188363.42

@@ -1,0 +1,197 @@
+iso3,country,group,year,teu_thousand
+ARE,"United Arab Emirates",GCC,2024,23467
+ARE,"United Arab Emirates",GCC,2023,21531
+ARE,"United Arab Emirates",GCC,2022,20392
+ARE,"United Arab Emirates",GCC,2021,19236
+ARE,"United Arab Emirates",GCC,2020,18720
+ARE,"United Arab Emirates",GCC,2019,18802
+ARE,"United Arab Emirates",GCC,2018,18696
+ARE,"United Arab Emirates",GCC,2017,19090
+ARE,"United Arab Emirates",GCC,2016,20652
+ARE,"United Arab Emirates",GCC,2015,21238
+BHR,"Bahrain",GCC,2024,409
+BHR,"Bahrain",GCC,2023,404
+BHR,"Bahrain",GCC,2022,383
+BHR,"Bahrain",GCC,2021,405
+BHR,"Bahrain",GCC,2020,464
+BHR,"Bahrain",GCC,2019,419
+BHR,"Bahrain",GCC,2018,432
+BHR,"Bahrain",GCC,2017,400
+BHR,"Bahrain",GCC,2016,425
+BHR,"Bahrain",GCC,2015,380
+CHN,"China",Benchmark,2024,299704
+CHN,"China",Benchmark,2023,278760
+CHN,"China",Benchmark,2022,268790
+CHN,"China",Benchmark,2021,256946
+CHN,"China",Benchmark,2020,240480
+CHN,"China",Benchmark,2019,237570
+CHN,"China",Benchmark,2018,229128
+CHN,"China",Benchmark,2017,218713
+CHN,"China",Benchmark,2016,202831
+CHN,"China",Benchmark,2015,195509
+DJI,"Djibouti",Other MENA,2024,1293
+DJI,"Djibouti",Other MENA,2023,887
+DJI,"Djibouti",Other MENA,2022,635
+DJI,"Djibouti",Other MENA,2021,692
+DJI,"Djibouti",Other MENA,2020,860
+DJI,"Djibouti",Other MENA,2019,917
+DJI,"Djibouti",Other MENA,2018,859
+DJI,"Djibouti",Other MENA,2017,928
+DJI,"Djibouti",Other MENA,2016,987
+DJI,"Djibouti",Other MENA,2015,910
+DZA,"Algeria",Other MENA,2024,1828
+DZA,"Algeria",Other MENA,2023,1546
+DZA,"Algeria",Other MENA,2022,1531
+DZA,"Algeria",Other MENA,2020,1541
+DZA,"Algeria",Other MENA,2019,1794
+DZA,"Algeria",Other MENA,2018,1844
+DZA,"Algeria",Other MENA,2017,1725
+DZA,"Algeria",Other MENA,2016,1831
+DZA,"Algeria",Other MENA,2015,1694
+EGY,"Egypt",Other MENA,2024,8581
+EGY,"Egypt",Other MENA,2023,8361
+EGY,"Egypt",Other MENA,2022,7647
+EGY,"Egypt",Other MENA,2021,7226
+EGY,"Egypt",Other MENA,2020,7564
+EGY,"Egypt",Other MENA,2019,7403
+EGY,"Egypt",Other MENA,2018,6702
+EGY,"Egypt",Other MENA,2017,6337
+EGY,"Egypt",Other MENA,2016,5888
+EGY,"Egypt",Other MENA,2015,6490
+IRQ,"Iraq",Other MENA,2019,933
+IRQ,"Iraq",Other MENA,2018,743
+IRQ,"Iraq",Other MENA,2017,824
+IRQ,"Iraq",Other MENA,2016,221
+IRQ,"Iraq",Other MENA,2015,109
+JOR,"Jordan",Other MENA,2024,824
+JOR,"Jordan",Other MENA,2023,899
+JOR,"Jordan",Other MENA,2022,853
+JOR,"Jordan",Other MENA,2021,766
+JOR,"Jordan",Other MENA,2020,857
+JOR,"Jordan",Other MENA,2019,798
+JOR,"Jordan",Other MENA,2018,815
+JOR,"Jordan",Other MENA,2017,796
+JOR,"Jordan",Other MENA,2016,793
+JOR,"Jordan",Other MENA,2015,758
+KWT,"Kuwait",GCC,2020,864
+KWT,"Kuwait",GCC,2019,960
+KWT,"Kuwait",GCC,2018,955
+KWT,"Kuwait",GCC,2017,965
+KWT,"Kuwait",GCC,2016,944
+KWT,"Kuwait",GCC,2015,985
+LBN,"Lebanon",Other MENA,2024,762
+LBN,"Lebanon",Other MENA,2022,434
+LBN,"Lebanon",Other MENA,2021,640
+LBN,"Lebanon",Other MENA,2020,799
+LBN,"Lebanon",Other MENA,2019,1258
+LBN,"Lebanon",Other MENA,2018,1333
+LBN,"Lebanon",Other MENA,2017,1305
+LBN,"Lebanon",Other MENA,2016,1147
+LBN,"Lebanon",Other MENA,2015,1130
+LBY,"Libya",Other MENA,2023,465
+LBY,"Libya",Other MENA,2022,429
+LBY,"Libya",Other MENA,2021,422
+LBY,"Libya",Other MENA,2020,344
+LBY,"Libya",Other MENA,2019,265
+LBY,"Libya",Other MENA,2017,106
+LBY,"Libya",Other MENA,2016,124
+MAR,"Morocco",Other MENA,2024,11789
+MAR,"Morocco",Other MENA,2023,9964
+MAR,"Morocco",Other MENA,2022,8840
+MAR,"Morocco",Other MENA,2021,8449
+MAR,"Morocco",Other MENA,2020,7001
+MAR,"Morocco",Other MENA,2019,6069
+MAR,"Morocco",Other MENA,2018,4716
+MAR,"Morocco",Other MENA,2017,4510
+MAR,"Morocco",Other MENA,2016,4107
+MAR,"Morocco",Other MENA,2015,3987
+MEA,"Middle East & North Africa (WB region)",Benchmark,2024,75810
+MEA,"Middle East & North Africa (WB region)",Benchmark,2023,70749
+MEA,"Middle East & North Africa (WB region)",Benchmark,2022,68545
+MEA,"Middle East & North Africa (WB region)",Benchmark,2021,65139
+MEA,"Middle East & North Africa (WB region)",Benchmark,2020,64802
+MEA,"Middle East & North Africa (WB region)",Benchmark,2019,64908
+MEA,"Middle East & North Africa (WB region)",Benchmark,2018,64532
+MEA,"Middle East & North Africa (WB region)",Benchmark,2017,64222
+MEA,"Middle East & North Africa (WB region)",Benchmark,2016,61684
+MEA,"Middle East & North Africa (WB region)",Benchmark,2015,60565
+NLD,"Netherlands",Benchmark,2024,14517
+NLD,"Netherlands",Benchmark,2023,14111
+NLD,"Netherlands",Benchmark,2022,14929
+NLD,"Netherlands",Benchmark,2021,15782
+NLD,"Netherlands",Benchmark,2020,14757
+NLD,"Netherlands",Benchmark,2019,15198
+NLD,"Netherlands",Benchmark,2018,14802
+NLD,"Netherlands",Benchmark,2017,13992
+NLD,"Netherlands",Benchmark,2016,12612
+NLD,"Netherlands",Benchmark,2015,12401
+OMN,"Oman",GCC,2024,4247
+OMN,"Oman",GCC,2023,4608
+OMN,"Oman",GCC,2022,5228
+OMN,"Oman",GCC,2021,5239
+OMN,"Oman",GCC,2020,5146
+OMN,"Oman",GCC,2019,4901
+OMN,"Oman",GCC,2018,4211
+OMN,"Oman",GCC,2017,4785
+OMN,"Oman",GCC,2016,3944
+OMN,"Oman",GCC,2015,3105
+QAT,"Qatar",GCC,2024,1421
+QAT,"Qatar",GCC,2023,1318
+QAT,"Qatar",GCC,2022,1409
+QAT,"Qatar",GCC,2021,1544
+QAT,"Qatar",GCC,2020,1413
+QAT,"Qatar",GCC,2019,1340
+QAT,"Qatar",GCC,2018,1340
+QAT,"Qatar",GCC,2017,773
+QAT,"Qatar",GCC,2016,528
+QAT,"Qatar",GCC,2015,568
+SAU,"Saudi Arabia",GCC,2024,8030
+SAU,"Saudi Arabia",GCC,2023,11380
+SAU,"Saudi Arabia",GCC,2022,10469
+SAU,"Saudi Arabia",GCC,2021,9876
+SAU,"Saudi Arabia",GCC,2020,9330
+SAU,"Saudi Arabia",GCC,2019,8906
+SAU,"Saudi Arabia",GCC,2018,8683
+SAU,"Saudi Arabia",GCC,2017,8082
+SAU,"Saudi Arabia",GCC,2016,7683
+SAU,"Saudi Arabia",GCC,2015,7794
+SGP,"Singapore",Benchmark,2024,41124
+SGP,"Singapore",Benchmark,2023,39010
+SGP,"Singapore",Benchmark,2022,37290
+SGP,"Singapore",Benchmark,2021,37571
+SGP,"Singapore",Benchmark,2020,36871
+SGP,"Singapore",Benchmark,2019,37195
+SGP,"Singapore",Benchmark,2018,36599
+SGP,"Singapore",Benchmark,2017,33667
+SGP,"Singapore",Benchmark,2016,30904
+SGP,"Singapore",Benchmark,2015,30922
+TUN,"Tunisia",Other MENA,2024,492
+TUN,"Tunisia",Other MENA,2023,445
+TUN,"Tunisia",Other MENA,2022,431
+TUN,"Tunisia",Other MENA,2021,470
+TUN,"Tunisia",Other MENA,2020,483
+TUN,"Tunisia",Other MENA,2019,474
+TUN,"Tunisia",Other MENA,2018,493
+TUN,"Tunisia",Other MENA,2017,481
+TUN,"Tunisia",Other MENA,2016,490
+TUN,"Tunisia",Other MENA,2015,471
+USA,"United States",Benchmark,2024,59707
+USA,"United States",Benchmark,2023,54619
+USA,"United States",Benchmark,2022,61191
+USA,"United States",Benchmark,2021,60875
+USA,"United States",Benchmark,2020,53059
+USA,"United States",Benchmark,2019,54237
+USA,"United States",Benchmark,2018,52994
+USA,"United States",Benchmark,2017,50196
+USA,"United States",Benchmark,2016,46940
+USA,"United States",Benchmark,2015,46497
+WLD,"World",Benchmark,2024,913279
+WLD,"World",Benchmark,2023,853612
+WLD,"World",Benchmark,2022,850417
+WLD,"World",Benchmark,2021,844570
+WLD,"World",Benchmark,2020,791062
+WLD,"World",Benchmark,2019,803124
+WLD,"World",Benchmark,2018,784295
+WLD,"World",Benchmark,2017,746692
+WLD,"World",Benchmark,2016,700904
+WLD,"World",Benchmark,2015,684527

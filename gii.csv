@@ -1,0 +1,18 @@
+iso3,country,group,gii_rank_2025,gii_score_2025
+ARE,"United Arab Emirates",GCC,30,44.2
+SAU,"Saudi Arabia",GCC,46,36.0
+QAT,"Qatar",GCC,48,34.6
+BHR,"Bahrain",GCC,62,30.0
+OMN,"Oman",GCC,69,28.7
+KWT,"Kuwait",GCC,73,28.2
+MAR,"Morocco",Other MENA,57,31.1
+JOR,"Jordan",Other MENA,65,29.7
+TUN,"Tunisia",Other MENA,76,27.0
+EGY,"Egypt",Other MENA,86,24.7
+LBN,"Lebanon",Other MENA,90,23.6
+DZA,"Algeria",Other MENA,115,18.9
+CHE,"Switzerland",Benchmark,1,66.0
+USA,"United States",Benchmark,3,61.7
+SGP,"Singapore",Benchmark,5,59.9
+NLD,"Netherlands",Benchmark,8,57.0
+CHN,"China",Benchmark,10,56.6

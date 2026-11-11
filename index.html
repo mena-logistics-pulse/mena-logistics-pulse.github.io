@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MENA Supply Chain &amp; Logistics Innovation Pulse</title>
+<meta name="description" content="Open-data dashboard on supply chain, logistics, port efficiency, connectivity, digital trade and innovation across MENA and the GCC.">
+<meta name="author" content="Dr. Mohammad A. K. Al-Smairat">
+<meta property="og:title" content="MENA Supply Chain &amp; Logistics Innovation Pulse">
+<meta property="og:description" content="Open-data dashboard: port efficiency (CPPI 2025), logistics performance (LPI 2.0), liner connectivity, eBL readiness and innovation across MENA and the GCC.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://spssbusproject-sys.github.io/mena-logistics-pulse/">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="og:image" content="https://spssbusproject-sys.github.io/mena-logistics-pulse/preview.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Fraunces:opsz,wght@9..144,400&family=Noto+Kufi+Arabic:wght@400;600&display=swap">
+<link rel="stylesheet" href="style.css">
+<style>html,body{margin:0;background:#070d22}.sx{--font-anthropic-sans:Inter,system-ui,sans-serif;--font-anthropic-serif:Fraunces,Georgia,serif}.dash-select{font:inherit;font-size:13px;padding:6px 12px;border:1px solid var(--line);border-radius:999px;background:transparent;color:var(--ink)}.sx-credit{font-size:12px;color:var(--mute);text-align:center;padding:8px 0 0}.sx-credit a{color:var(--teal)}</style>
+<script src="d3.v7.min.js"></script>
+<script src="runtime.js"></script>
+</head>
+<body>
+<div class="sx" data-read lang="en">
+  <div class="sx-bg" aria-hidden="true">
+    <div class="sx-grid"></div>
+    <div class="sx-blob sx-b1"></div><div class="sx-blob sx-b2"></div><div class="sx-blob sx-b3"></div><div class="sx-blob sx-b4"></div>
+    <svg class="sx-net" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice"><g fill="none" stroke="#38bdf8" stroke-width="1" opacity=".35"><path class="sx-flow" stroke-dasharray="2 14" d="M-20 620 C 240 520 360 300 620 280 S 1000 120 1240 160"/><path class="sx-flow" stroke-dasharray="2 14" stroke="#2dd4bf" d="M-20 300 C 200 360 420 520 700 470 S 1080 380 1240 520"/><path class="sx-flow" stroke-dasharray="2 14" stroke="#a78bfa" d="M100 820 C 260 640 520 640 760 700 S 1060 760 1240 640"/></g><g fill="#7dd3fc" opacity=".55"><circle cx="620" cy="280" r="3"/><circle cx="700" cy="470" r="3"/><circle cx="360" cy="400" r="2"/><circle cx="1000" cy="150" r="2.5"/><circle cx="240" cy="560" r="2"/><circle cx="900" cy="410" r="2.5"/></g></svg>
+    <svg class="sx-waves" viewBox="0 0 2400 220" preserveAspectRatio="none"><path d="M0 120 Q150 60 300 120 T600 120 T900 120 T1200 120 T1500 120 T1800 120 T2100 120 T2400 120 V220 H0Z" fill="#0ea5e9" opacity=".25"/><path d="M0 150 Q150 100 300 150 T600 150 T900 150 T1200 150 T1500 150 T1800 150 T2100 150 T2400 150 V220 H0Z" fill="#14b8a6" opacity=".22"/></svg>
+  </div>
+
+
+  <header class="sx-hero sx-in" id="overview">
+    <div>
+      <p class="sx-eyebrow"><span class="sx-dot"></span><span class="en">Open-data monitor · logistics · connectivity · digital trade · innovation</span><span class="ar">مرصد بيانات مفتوحة · اللوجستيات · الربط · التجارة الرقمية · الابتكار</span></p>
+      <h1><span class="en">MENA Supply Chain &amp; Logistics Innovation Pulse</span><span class="ar">نبض سلاسل الإمداد والابتكار اللوجستي في الشرق الأوسط وشمال أفريقيا</span></h1>
+      <p class="sx-lede"><span class="en">MENA container ports handled <span class="sx-hl t" data-draw="lede-teu" data-source="teu_summary" data-field="teu_latest_m" data-where="key=MENA">—</span> million TEU in their latest reported year, <span class="sx-hl s" data-draw="lede-teu-d" data-source="teu_summary" data-field="change_vs_2019_pct" data-where="key=MENA">—</span> versus 2019. The region's median port turnaround is <span class="sx-hl v" data-draw="lede-tat" data-source="lpi_scope" data-field="port_turnaround_days" data-where="key=MENA">—</span> days, and <span class="sx-hl a" data-draw="lede-ebl" data-source="mletr_scope" data-field="adopters" data-where="key=MENA">—</span> MENA jurisdictions have adopted the UN model law that gives electronic bills of lading legal force.</span><span class="ar">تعاملت موانئ الحاويات في المنطقة مع <span class="sx-hl t" data-draw="lede-teu">—</span> مليون حاوية نمطية في آخر سنة متاحة، بتغيّر <span class="sx-hl s" data-draw="lede-teu-d">—</span> مقارنة بعام 2019. يبلغ وسيط زمن بقاء السفن في الموانئ <span class="sx-hl v" data-draw="lede-tat">—</span> يوم، وتبنّت <span class="sx-hl a" data-draw="lede-ebl">—</span> ولايات قضائية في المنطقة القانون النموذجي الذي يمنح سندات الشحن الإلكترونية قوة قانونية.</span></p>
+    </div>
+    <div class="sx-radar" id="radar">
+      <h3><span class="en">Logistics innovation radar</span><span class="ar">رادار الابتكار اللوجستي</span> · <span data-draw="radar-name">—</span></h3>
+      <p><span class="en">Six capabilities scaled 0–100 against the best economy shown, versus the benchmark and any economies you add to Compare.</span><span class="ar">ست قدرات بمقياس 0–100 مقارنة بأفضل اقتصاد، مع الاقتصاد المرجعي وأي اقتصادات تضيفها للمقارنة.</span></p>
+      <div class="sx-radar-c" data-draw="radar" data-source="readiness"></div>
+    </div>
+  </header>
+
+  <div class="sx-bar" id="scope-bar" role="toolbar" aria-label="Scope and tools">
+    <div class="sx-seg">
+      <button type="button" data-scope="World" aria-pressed="false"><span class="en">World</span><span class="ar">العالم</span></button>
+      <button type="button" data-scope="MENA" aria-pressed="true">MENA</button>
+      <button type="button" data-scope="GCC" aria-pressed="false"><span class="en">GCC</span><span class="ar">الخليج</span></button>
+    </div>
+    <select class="dash-select" data-draw="country" aria-label="Country" data-source="lpi"></select>
+    <div class="sx-search"><svg class="mag" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg><input type="search" data-search placeholder="Search countries, ports, sections…" aria-label="Search countries, ports and sections"><div class="sx-results" data-draw="search-results" role="listbox"></div></div>
+    <div class="sx-tools">
+      <label class="sx-asof"><span class="en">Benchmark</span><span class="ar">المرجع</span> <select class="dash-select" data-bench aria-label="Benchmark economy"><option value="SGP">Singapore</option><option value="NLD">Netherlands</option><option value="CHN">China</option><option value="USA">United States</option></select></label>
+      <button type="button" class="sx-iconbtn" data-lang="en" aria-pressed="true">EN</button>
+      <button type="button" class="sx-iconbtn" data-lang="ar" aria-pressed="false">عربي</button>
+      <button type="button" class="sx-iconbtn" data-theme-toggle aria-pressed="false" aria-label="Light theme">☀ / ☾</button>
+    </div>
+    <span class="sx-asof"><span class="en">Showing</span><span class="ar">النطاق</span> <b data-draw="scope-name">—</b></span>
+  </div>
+
+  <section class="sx-kpis" id="kpis" aria-label="Headline indicators">
+    <div class="sx-card sx-in" id="kpi-teu" style="--acc:linear-gradient(90deg,#2dd4bf,#38bdf8);--accs:#2dd4bf">
+      <div class="sx-k-top"><span class="sx-ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="7" width="18" height="11" rx="1"/><path d="M7 7v11M11 7v11M15 7v11"/></svg></span><span class="en">Container port throughput · </span><span class="ar">إنتاجية موانئ الحاويات · </span><span data-draw="k-teu-scope">—</span></div>
+      <span class="sx-k-val"><span data-draw="k-teu" data-source="teu_summary" data-field="teu_latest_m" data-where="key=MENA">—</span><small>mn TEU</small></span>
+      <span class="sx-chip" data-draw="k-teu-d" data-source="teu_summary" data-field="change_vs_2019_pct" data-where="key=MENA">—</span>
+      <span class="sx-k-unit"><span class="en">latest reported year vs 2019</span><span class="ar">آخر سنة مقارنة بـ 2019</span></span>
+      <div class="sx-spark" data-draw="sp-teu" data-source="teu"></div>
+    </div>
+    <div class="sx-card sx-in" id="kpi-air" style="--acc:linear-gradient(90deg,#38bdf8,#818cf8);--accs:#38bdf8">
+      <div class="sx-k-top"><span class="sx-ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 16l20-6-20-6 5 6-5 6zM7 10h8"/></svg></span><span class="en">Air cargo · </span><span class="ar">الشحن الجوي · </span><span data-draw="k-air-scope">—</span></div>
+      <span class="sx-k-val"><span data-draw="k-air" data-source="air_summary" data-field="air_latest_bn" data-where="key=MENA">—</span><small>bn ton-km</small></span>
+      <span class="sx-chip" data-draw="k-air-d" data-source="air_summary" data-field="change_vs_2019_pct" data-where="key=MENA">—</span>
+      <span class="sx-k-unit"><span class="en">2023 vs 2019</span><span class="ar">2023 مقارنة بـ 2019</span></span>
+      <div class="sx-spark" data-draw="sp-air" data-source="air"></div>
+    </div>
+    <div class="sx-card sx-in" id="kpi-tat" style="--acc:linear-gradient(90deg,#a78bfa,#f472b6);--accs:#a78bfa">
+      <div class="sx-k-top"><span class="sx-ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l3 2M9 2h6"/></svg></span><span class="en">Port turnaround time · </span><span class="ar">زمن بقاء السفن · </span><span data-draw="k-tat-scope">—</span></div>
+      <span class="sx-k-val"><span data-draw="k-tat" data-source="lpi_scope" data-field="port_turnaround_days" data-where="key=MENA">—</span><small>days</small></span>
+      <span class="sx-chip" data-draw="k-tat-d" data-source="lpi_scope" data-field="import_dwell_days" data-where="key=MENA">—</span>
+      <span class="sx-k-unit"><span class="en">median ship time in port · chip: container import dwell (days)</span><span class="ar">وسيط بقاء السفينة · الشارة: مكوث حاويات الاستيراد (أيام)</span></span>
+    </div>
+    <div class="sx-card sx-in" id="kpi-gii" style="--acc:linear-gradient(90deg,#fbbf24,#fb923c);--accs:#fbbf24">
+      <div class="sx-k-top"><span class="sx-ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18h6M10 21h4M12 3a6 6 0 00-4 10.5c.7.7 1 1.5 1 2.5h6c0-1 .3-1.8 1-2.5A6 6 0 0012 3z"/></svg></span><span class="en">Global Innovation Index 2025 · best rank</span><span class="ar">مؤشر الابتكار العالمي 2025 · أفضل ترتيب</span></div>
+      <span class="sx-k-val"><span data-draw="k-gii" data-source="gii_scope" data-field="best_rank" data-where="key=MENA">—</span><small>of 139</small></span>
+      <span class="sx-chip" data-draw="k-gii-d" data-source="gii_scope" data-field="best_country" data-where="key=MENA">—</span>
+      <span class="sx-k-unit"><span class="en">top-ranked economy in scope (WIPO)</span><span class="ar">أعلى اقتصاد ترتيباً في النطاق</span></span>
+    </div>
+    <div class="sx-card sx-in" id="kpi-ebl" style="--acc:linear-gradient(90deg,#a3e635,#2dd4bf);--accs:#a3e635">
+      <div class="sx-k-top"><span class="sx-ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/><path d="M10 6.5h4v11M6.5 10v4"/></svg></span><span class="en">Electronic bills of lading · legal readiness</span><span class="ar">سندات الشحن الإلكترونية · الجاهزية القانونية</span></div>
+      <span class="sx-k-val"><span data-draw="k-ebl" data-source="mletr_scope" data-field="adopters" data-where="key=MENA">—</span><small>jurisdictions</small></span>
+      <span class="sx-chip" data-draw="k-ebl-d" data-source="mletr_scope" data-field="first_year" data-where="key=MENA">—</span>
+      <span class="sx-k-unit"><span class="en">laws based on the UNCITRAL Model Law on Electronic Transferable Records · chip: first adoption</span><span class="ar">قوانين مبنية على قانون الأونسيترال النموذجي للسجلات الإلكترونية القابلة للتحويل · الشارة: أول تبنٍّ</span></span>
+      <div class="sx-spark" data-draw="sp-ebl" data-source="mletr"></div>
+    </div>
+    <div class="sx-card sx-in" id="kpi-wci" style="--acc:linear-gradient(90deg,#f472b6,#a78bfa);--accs:#f472b6">
+      <div class="sx-k-top"><span class="sx-ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 17l2 3h14l2-3M5 17V11h14v6M9 11V6h6v5"/></svg></span><span class="en">Container spot rate · Drewry WCI</span><span class="ar">سعر شحن الحاوية الفوري · دروري</span></div>
+      <span class="sx-k-val" data-draw="k-wci" data-source="wci" data-field="usd_per_feu" data-where="route=WCI composite">—</span>
+      <span class="sx-chip" data-draw="k-wci-d" data-source="wci" data-field="week_on_week_pct" data-where="route=WCI composite">—</span>
+      <span class="sx-k-unit">US$ per 40ft · week on week · <span data-draw="k-wci-date">—</span></span>
+      <div class="sx-spark" data-draw="sp-wci" data-source="wci"></div>
+    </div>
+  </section>
+
+
+  <section class="sx-sec" id="insights" style="--acc:var(--amber)">
+    <h2><span class="sx-num">✦</span><span class="en">What the data says now</span><span class="ar">ماذا تقول البيانات الآن</span></h2>
+    <p class="sx-sub"><span class="en">Headline findings recomputed from the datasets below whenever they refresh.</span><span class="ar">أبرز النتائج، تُحسب تلقائياً من البيانات أدناه عند كل تحديث.</span></p>
+    <div class="sx-insights" data-draw="insights" data-source="cppi_country teu_summary mlii wto iata"></div>
+  </section>
+  <div class="sx-two" id="pulse">
+    <section class="sx-sec" id="wto-pulse" style="--acc:var(--teal)">
+    <h2><span class="sx-num">01</span><span class="en">World trade outlook, 2025–2027</span><span class="ar">آفاق التجارة العالمية 2025–2027</span></h2>
+    <p class="sx-sub"><span class="en">WTO Global Trade Outlook: annual volume growth, 2025 actual (muted) and 2026–2027 forecasts.</span><span class="ar">توقعات منظمة التجارة العالمية لنمو حجم التجارة: 2025 فعلي، و2026–2027 توقعات.</span></p>
+    <div class="sx-chart s" data-draw="wto-bars" data-source="wto"></div>
+  </section>
+  <section class="sx-sec" id="iata-pulse" style="--acc:var(--pink)">
+    <h2><span class="sx-num">02</span><span class="en">Air cargo demand, 2026 month by month</span><span class="ar">الطلب على الشحن الجوي شهرياً في 2026</span></h2>
+    <p class="sx-sub"><span class="en">IATA global cargo tonne-kilometres (CTK), change versus the same month of 2025.</span><span class="ar">طن-كيلومتر الشحن الجوي العالمي (IATA)، التغير مقارنة بالشهر نفسه من 2025.</span></p>
+    <div class="sx-chart s" data-draw="iata-bars" data-source="iata"></div>
+  </section>
+  </div>
+
+  <section class="sx-sec" id="ports" style="--acc:var(--sky)">
+    <h2><span class="sx-num">03</span><span class="en">Port efficiency map · CPPI 2025</span><span class="ar">خريطة كفاءة الموانئ · CPPI 2025</span></h2>
+    <p class="sx-sub"><span class="en">Countries are coloured by the measure you pick; circles are container ports from the World Bank–S&amp;P Global Container Port Performance Index 2025, sized by ship calls and coloured by score (green = less vessel time in port). Pulsing ports rank in the world top 25. Click a country to focus on it, or a port to highlight it.</span><span class="ar">تُلوَّن الدول حسب المؤشر المختار؛ والدوائر موانئ حاويات من مؤشر أداء موانئ الحاويات 2025 (البنك الدولي و S&amp;P)، حجمها حسب عدد زيارات السفن ولونها حسب الدرجة. الموانئ النابضة ضمن أفضل 25 عالمياً.</span></p>
+    <div class="sx-chips" role="group" aria-label="Map colour">
+      <button type="button" data-mapm="mlii" aria-pressed="true"><span class="en">Innovation index</span><span class="ar">مؤشر الابتكار</span></button>
+      <button type="button" data-mapm="lpi" aria-pressed="false"><span class="en">Port turnaround</span><span class="ar">زمن بقاء السفن</span></button>
+      <button type="button" data-mapm="lsci" aria-pressed="false"><span class="en">Liner connectivity</span><span class="ar">الربط الملاحي</span></button>
+      <button type="button" data-mapm="gii" aria-pressed="false"><span class="en">Innovation (GII)</span><span class="ar">الابتكار GII</span></button>
+      <button type="button" data-mapm="teu" aria-pressed="false"><span class="en">TEU growth</span><span class="ar">نمو الحاويات</span></button>
+    </div>
+    <div class="sx-legend" data-draw="map-legend" data-source="mlii lpi lsci_summary gii teu_summary"></div>
+    <div class="sx-map" data-draw="map" data-source="geo cppi mlii"></div>
+    <h3 class="sx-h3"><span class="en">Port ranking, CPPI 2025 (world rank of 400+ ports)</span><span class="ar">ترتيب الموانئ CPPI 2025</span></h3>
+    <div class="sx-chart" data-draw="cppi-rank" data-source="cppi"></div>
+  </section>
+  <section class="sx-sec" id="index" style="--acc:var(--violet)">
+    <h2><span class="sx-num">04</span><span class="en">MENA Logistics Innovation Index</span><span class="ar">مؤشر الابتكار اللوجستي لمنطقة الشرق الأوسط وشمال أفريقيا</span></h2>
+    <p class="sx-sub"><span class="en">A composite of six open indicators, each scaled 0–100 across the economies shown. Move the sliders to set your own weights; bars show each component's contribution. Benchmarks are included for reference.</span><span class="ar">مؤشر مركّب من ستة مؤشرات مفتوحة بمقياس 0–100. حرّك المؤشرات لتحديد الأوزان؛ تُظهر الأشرطة مساهمة كل مكوّن.</span></p>
+    <div class="sx-sliders">
+      <label class="sx-sl"><span><span class="en">Port efficiency (CPPI)</span><span class="ar">كفاءة الموانئ</span> · <b data-draw="wlab" data-k="port_efficiency">—</b></span><input type="range" min="0" max="50" step="1" value="15" data-w="port_efficiency" aria-label="Port efficiency (CPPI) weight"></label>
+      <label class="sx-sl"><span><span class="en">Logistics speed (LPI)</span><span class="ar">سرعة اللوجستيات</span> · <b data-draw="wlab" data-k="logistics_speed">—</b></span><input type="range" min="0" max="50" step="1" value="15" data-w="logistics_speed" aria-label="Logistics speed (LPI) weight"></label>
+      <label class="sx-sl"><span><span class="en">Liner connectivity (LSCI)</span><span class="ar">الربط الملاحي</span> · <b data-draw="wlab" data-k="liner_connectivity">—</b></span><input type="range" min="0" max="50" step="1" value="15" data-w="liner_connectivity" aria-label="Liner connectivity (LSCI) weight"></label>
+      <label class="sx-sl"><span><span class="en">Air connectivity (LPI)</span><span class="ar">الربط الجوي</span> · <b data-draw="wlab" data-k="air_connectivity">—</b></span><input type="range" min="0" max="50" step="1" value="15" data-w="air_connectivity" aria-label="Air connectivity (LPI) weight"></label>
+      <label class="sx-sl"><span><span class="en">Innovation (GII)</span><span class="ar">الابتكار</span> · <b data-draw="wlab" data-k="innovation">—</b></span><input type="range" min="0" max="50" step="1" value="15" data-w="innovation" aria-label="Innovation (GII) weight"></label>
+      <label class="sx-sl"><span><span class="en">eBL law (MLETR)</span><span class="ar">قانون السند الإلكتروني</span> · <b data-draw="wlab" data-k="ebl_law">—</b></span><input type="range" min="0" max="50" step="1" value="15" data-w="ebl_law" aria-label="eBL law (MLETR) weight"></label>
+    </div>
+    <button type="button" class="sx-iconbtn" data-wreset><span class="en">Reset weights</span><span class="ar">إعادة الأوزان</span></button>
+    <div class="sx-chart" data-draw="mlii" data-source="mlii"></div>
+  </section>
+  <section class="sx-sec" id="profile" style="--acc:var(--teal)">
+    <h2><span class="sx-num">05</span><span class="en">Country profile</span><span class="ar">ملف الدولة</span></h2>
+    <p class="sx-sub"><span class="en">A one-screen brief for the focus country (pick one in the toolbar; MENA and GCC views show the UAE). Ranks are among MENA economies.</span><span class="ar">ملخص في شاشة واحدة للدولة المختارة؛ الترتيب بين اقتصادات المنطقة.</span></p>
+    <div class="sx-prof-head"><h3 class="sx-prof-name" data-draw="profile-name">—</h3><button type="button" class="sx-iconbtn" data-copy-profile><span class="en">Copy summary</span><span class="ar">نسخ الملخص</span></button></div>
+    <div data-draw="profile" data-source="mlii cppi_country lpi teu_summary air_summary lsci_summary gii mletr"></div>
+  </section>
+  <section class="sx-sec" id="compare" style="--acc:var(--pink)">
+    <h2><span class="sx-num">06</span><span class="en">Compare economies</span><span class="ar">مقارنة الاقتصادات</span></h2>
+    <p class="sx-sub"><span class="en">The focus country and benchmark side by side with up to three more economies. The best value in each row is highlighted.</span><span class="ar">الدولة المختارة والمرجع جنباً إلى جنب مع حتى ثلاثة اقتصادات أخرى، مع إبراز أفضل قيمة.</span></p>
+    <div class="sx-cmpbar"><div class="sx-cmpbar" data-draw="cmp-chips"></div><select class="dash-select" data-draw="cmp-add" aria-label="Add an economy to compare" data-source="lpi"></select></div>
+    <div class="sx-tw" data-draw="cmp-grid" data-source="mlii cppi_country lpi teu_summary lsci_summary gii mletr"></div>
+  </section>
+  <section class="sx-sec" id="performance" style="--acc:var(--violet)">
+    <h2><span class="sx-num">07</span><span class="en">Logistics performance league</span><span class="ar">ترتيب الأداء اللوجستي</span></h2>
+    <p class="sx-sub">World Bank Logistics Performance Indicators 2.0, built from tracking data on millions of shipments (2024 reference year). Pick a measure; economies are ranked best to worst, with global leaders shown for comparison. The dashed line marks the World Bank's Middle East &amp; North Africa regional value.</p>
+    <div class="sx-chips" role="group" aria-label="Measure">
+      <button type="button" data-metric="port_turnaround_days" aria-pressed="true">Port turnaround</button>
+      <button type="button" data-metric="import_dwell_days" aria-pressed="false">Import dwell</button>
+      <button type="button" data-metric="export_dwell_days" aria-pressed="false">Export dwell</button>
+      <button type="button" data-metric="maritime_partner_economies" aria-pressed="false">Maritime partners</button>
+      <button type="button" data-metric="liner_services" aria-pressed="false">Liner services</button>
+      <button type="button" data-metric="aviation_partner_economies" aria-pressed="false">Aviation partners</button>
+    </div>
+    <div class="sx-chart" data-draw="league" data-source="lpi"></div>
+  </section>
+
+  <div class="sx-two">
+    <section class="sx-sec" id="teu-trend" style="--acc:var(--teal)">
+      <h2><span class="sx-num">08</span><span class="en">Container gateways, 2015–2024</span><span class="ar">بوابات الحاويات 2015–2024</span></h2>
+      <p class="sx-sub">Container port traffic in thousand TEU (World Bank WDI, from Lloyd's List data), for the largest economies in scope.</p>
+      <div class="sx-legend" data-draw="teu-legend" data-source="teu"></div>
+      <div class="sx-chart s" data-draw="teu-lines" data-source="teu"></div>
+    </section>
+    <section class="sx-sec" id="teu-growth" style="--acc:var(--sky)">
+      <h2><span class="sx-num">09</span><span class="en">Who grew their port volumes</span><span class="ar">من نمت أحجام موانئه</span></h2>
+      <p class="sx-sub">Latest reported container throughput and its change since 2019. Tap a country to focus the page on it.</p>
+      <div class="sx-chart s" data-draw="teu-bars" data-source="teu_summary"></div>
+    </section>
+  </div>
+
+  <section class="sx-sec" id="connectivity" style="--acc:var(--sky)">
+    <h2><span class="sx-num">10</span><span class="en">Liner shipping connectivity, quarter by quarter</span><span class="ar">الربط الملاحي ربعاً بربع</span></h2>
+    <p class="sx-sub">UNCTAD Liner Shipping Connectivity Index (average economy in Q1 2023 = 100), built from ship calls, deployed capacity, services, carriers, largest ship size and direct partner countries. Brighter cells mean stronger integration into global container networks; the right column gives the latest value and world rank.</p>
+    <div class="sx-chart" data-draw="lsci-heat" data-source="lsci lsci_summary"></div>
+  </section>
+
+  <div class="sx-two">
+    <section class="sx-sec" id="digital-trade" style="--acc:var(--lime)">
+      <h2><span class="sx-num">11</span><span class="en">Digital trade and blockchain readiness</span><span class="ar">جاهزية التجارة الرقمية والبلوك تشين</span></h2>
+      <p class="sx-sub">Jurisdictions that have enacted laws based on, or influenced by, the UNCITRAL Model Law on Electronic Transferable Records (2017). These laws let a digital or blockchain-based bill of lading carry the same legal effect as paper, a precondition for scaling eBL and tokenised trade documents.</p>
+      <div class="sx-chart s" data-draw="mletr" data-source="mletr"></div>
+      <p class="sx-note">Bahrain was the first country in the world to enact the Model Law (2018), and Abu Dhabi Global Market adopted it in 2021. Singapore, the UK and France have followed, while China's 2025 legislation draws on its principles.</p>
+    </section>
+    <section class="sx-sec" id="innovation" style="--acc:var(--amber)">
+      <h2><span class="sx-num">12</span><span class="en">Innovation capacity</span><span class="ar">القدرة على الابتكار</span></h2>
+      <p class="sx-sub">WIPO Global Innovation Index 2025 score (0–100) and rank among 139 economies, for MENA economies and global leaders.</p>
+      <div class="sx-chart s" data-draw="gii-bars" data-source="gii"></div>
+    </section>
+  </div>
+
+  <div class="sx-two">
+    <section class="sx-sec" id="air-cargo" style="--acc:var(--pink)">
+      <h2><span class="sx-num">13</span><span class="en">Air cargo hubs</span><span class="ar">مراكز الشحن الجوي</span></h2>
+      <p class="sx-sub">Air freight in million ton-km (World Bank WDI, from ICAO), 2019 (hollow) to 2023 (filled), on a log scale so large and small hubs fit together.</p>
+      <div class="sx-chart s" data-draw="air-bars" data-source="air_summary"></div>
+    </section>
+    <section class="sx-sec" id="pressure" style="--acc:var(--violet)">
+      <h2><span class="sx-num">14</span><span class="en">Global supply chain pressure</span><span class="ar">ضغط سلاسل الإمداد العالمية</span></h2>
+      <p class="sx-sub">New York Fed GSCPI since 2019, in standard deviations from its long-run average. Above zero (warm) means more stress than normal; below zero (cool) means less.</p>
+      <div class="sx-chart s" data-draw="gscpi-chart" data-source="gscpi"></div>
+    </section>
+  </div>
+
+  <section class="sx-sec" id="freight" style="--acc:var(--lime)">
+    <h2><span class="sx-num">15</span><span class="en">What a container costs</span><span class="ar">كلفة شحن الحاوية</span></h2>
+    <p class="sx-sub">Drewry World Container Index spot rates, US$ per 40ft container, latest weekly assessment.</p>
+    <div class="sx-chart s" data-draw="wci-bars" data-source="wci"></div>
+  </section>
+
+
+  <footer class="sx-foot" id="cite">
+    <details open>
+      <summary><span class="en">Cite this dashboard</span><span class="ar">الاستشهاد بهذه اللوحة</span></summary>
+      <p class="sx-cite en">MENA Supply Chain &amp; Logistics Innovation Pulse (2026). Open-data dashboard compiling World Bank LPI 2.0, CPPI 2025 and WDI; UNCTAD LSCI; WIPO GII 2025; UNCITRAL MLETR status; WTO Global Trade Outlook; IATA Air Cargo Market Analysis; NY Fed GSCPI; Drewry WCI. Accessed November 2026.</p>
+      <p class="sx-cite ar">نبض سلاسل الإمداد والابتكار اللوجستي في الشرق الأوسط وشمال أفريقيا (2026). لوحة بيانات مفتوحة تجمع مؤشرات البنك الدولي (LPI 2.0، CPPI 2025، WDI)، والأونكتاد (LSCI)، والويبو (GII 2025)، والأونسيترال (MLETR)، ومنظمة التجارة العالمية، وإياتا، والاحتياطي الفيدرالي في نيويورك (GSCPI)، ودروري (WCI). تاريخ الاطلاع: نوفمبر 2026.</p>
+      <button type="button" class="sx-iconbtn" data-copy-cite><span class="en">Copy citation</span><span class="ar">نسخ المرجع</span></button>
+    </details>
+    <details>
+      <summary><span class="en">Data dictionary</span><span class="ar">قاموس البيانات</span></summary>
+      <div class="sx-tw"><table class="sx-dict"><thead><tr><th>Dataset</th><th>Publisher</th><th>Measures</th><th>Coverage</th><th>Frequency</th></tr></thead><tbody><tr><td><b>LPI 2.0</b></td><td>World Bank</td><td>Port turnaround, import/export dwell (days, median); maritime and aviation partner economies; liner services</td><td>2024 data, 2025 release</td><td>Shipment tracking</td></tr><tr><td><b>CPPI 2025</b></td><td>World Bank &amp; S&amp;P Global Market Intelligence</td><td>Port score (higher = less vessel time in port); world rank; ship calls</td><td>2025</td><td>Annual</td></tr><tr><td><b>Container port traffic (IS.SHP.GOOD.TU)</b></td><td>World Bank WDI / Lloyd's List</td><td>TEU (thousand)</td><td>2015–2024</td><td>Annual</td></tr><tr><td><b>Air freight (IS.AIR.GOOD.MT.K1)</b></td><td>World Bank WDI / ICAO</td><td>Million ton-km</td><td>2015–2023</td><td>Annual</td></tr><tr><td><b>LSCI</b></td><td>UNCTADstat</td><td>Index, average economy Q1 2023 = 100; world rank</td><td>2019 Q1 – 2026 Q3</td><td>Quarterly</td></tr><tr><td><b>Global Innovation Index</b></td><td>WIPO</td><td>Score 0–100; rank of 139</td><td>2025</td><td>Annual</td></tr><tr><td><b>MLETR status</b></td><td>UNCITRAL</td><td>Jurisdictions enacting the Model Law on Electronic Transferable Records; year</td><td>2017–2025</td><td>On change</td></tr><tr><td><b>Global Trade Outlook</b></td><td>WTO</td><td>Merchandise and services trade volume growth (%)</td><td>2025–2027</td><td>Twice a year</td></tr><tr><td><b>Air Cargo Market Analysis</b></td><td>IATA</td><td>Global CTK, % change year on year</td><td>Jan–Sep 2026</td><td>Monthly</td></tr><tr><td><b>GSCPI</b></td><td>Federal Reserve Bank of New York</td><td>Standard deviations from average</td><td>2019–2026</td><td>Monthly</td></tr><tr><td><b>World Container Index</b></td><td>Drewry</td><td>US$ per 40ft container, spot</td><td>Latest week</td><td>Weekly</td></tr><tr><td><b>MENA Logistics Innovation Index</b></td><td>This dashboard</td><td>Composite 0–100 of six components above</td><td>Latest available</td><td>On refresh</td></tr></tbody></table></div>
+    </details>
+    <details>
+      <summary><span class="en">Methodology, definitions and caveats</span><span class="ar">المنهجية والتعريفات</span></summary>
+      <ul>
+        <li><b>MENA Logistics Innovation Index</b>: six components, each min–max scaled 0–100 across the economies shown — port efficiency (best CPPI 2025 port score), logistics speed (LPI port turnaround plus a quarter of import dwell, inverted), liner connectivity (log of latest LSCI), air connectivity (LPI aviation partner economies), innovation (GII 2025 score) and eBL law (100 if MLETR enacted, else 0). Missing components are left out and the remaining weights re-scaled. Default weights are equal, matching the score used for ranks in profile, compare and insights.</li>
+        <li><b>CPPI 2025</b> scores ports on vessel time in port relative to expected time for ship size and call size; higher is better, and negative scores mean slower than expected. Ports with too few calls are not ranked.</li>
+        <li><b>LPI 2.0</b> (World Bank, 2025 edition, 2024 data): turnaround and dwell times are medians in days (lower is better).</li>
+        <li><b>Container throughput</b> uses each economy's latest reported year in WDI; MENA and GCC totals sum economies that report both that year and 2019.</li>
+        <li><b>LSCI</b> is UNCTAD's quarterly index; values are relative to the average economy in Q1 2023 = 100.</li>
+        <li><b>WTO and IATA</b> figures are global. 2026–2027 WTO values are forecasts and will be revised.</li>
+        <li><b>eBL readiness</b> lists enactments reported by the UNCITRAL Secretariat.</li>
+      </ul>
+    </details>
+    <details>
+      <summary><span class="en">Planned modules</span><span class="ar">وحدات قادمة</span></summary>
+      <div class="sx-road">
+        <div><h3>Trade flows</h3><p>UN Comtrade and WTO Stats imports and exports by partner and product.</p></div>
+        <div><h3>Paperless trade scores</h3><p>UN Global Survey on Digital and Sustainable Trade Facilitation, once 2025 results publish.</p></div>
+        <div><h3>Blockchain programmes tracker</h3><p>National single windows, eBL platforms and blockchain trade pilots across the GCC.</p></div>
+        <div><h3>Port congestion index</h3><p>Monthly vessel waiting-time indicators where open data allow.</p></div>
+      </div>
+    </details>
+    <p class="sx-credit">Created by Dr. Mohammad A. K. Al-Smairat, Associate Professor of Supply Chain &amp; Quality Management, Hamdan Bin Mohammad Smart University, Dubai · Open data from the World Bank, UNCTAD, WIPO, UNCITRAL, WTO, IATA, the New York Fed and Drewry.</p>
+  </footer>
+</div>
+<script src="calcs.js"></script>
+<script src="core.js"></script>
+<script src="charts.js"></script>
+<script src="extra.js"></script>
+</body>
+</html>

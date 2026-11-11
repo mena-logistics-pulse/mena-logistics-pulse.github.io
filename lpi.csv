@@ -1,0 +1,23 @@
+iso3,country,group,import_dwell_days,export_dwell_days,port_turnaround_days,maritime_partner_economies,liner_services,aviation_partner_economies,air_import_dwell_days
+ARE,"United Arab Emirates",GCC,4.2,7.7,1.2,61,105.8,142,0.7
+BHR,"Bahrain",GCC,4.5,6.9,0.5,14,8.2,83,1
+DJI,"Djibouti",Other MENA,10.5,10.8,1.4,22,22.2,22.5,3
+DZA,"Algeria",Other MENA,16.7,0.1,4.9,16,36,70.5,11.8
+EGY,"Egypt",Other MENA,10.9,5.9,1,55,91.2,122,5.8
+IRQ,"Iraq",Other MENA,4.2,6.1,1.8,20,13.8,77,1.4
+JOR,"Jordan",Other MENA,4.6,4.7,0.6,23,11,94.5,2.3
+KWT,"Kuwait",GCC,5,6.9,0.9,10,10,96,1.1
+LBN,"Lebanon",Other MENA,8.7,7.1,0.6,31,18,103.5,2.1
+LBY,"Libya",Other MENA,2.1,8.7,1.9,27,21.2,,
+MAR,"Morocco",Other MENA,6.5,6.2,0.8,82,78.2,101,2.6
+OMN,"Oman",GCC,5.5,5,0.8,38,28,90.5,1.6
+QAT,"Qatar",GCC,2.5,1.6,0.5,28,19.8,104.5,0.7
+SAU,"Saudi Arabia",GCC,3.3,5.8,0.9,53,79,114.5,1
+TUN,"Tunisia",Other MENA,7.6,0.2,2.7,8,11.5,91,4.1
+YEM,"Yemen",Other MENA,7.4,1,2.5,10,11.8,,
+SGP,"Singapore",Benchmark,1.2,2.1,1.1,83,241,138.5,0.2
+NLD,"Netherlands",Benchmark,3,5.5,1,91,132.8,153,0.3
+CHN,"China",Benchmark,4,3.7,0.6,94,626.8,144.5,0.4
+USA,"United States",Benchmark,3.4,7.3,1.2,97,206.5,167,0.6
+MEA,"Middle East & North Africa (WB region)",Benchmark,6.6,5.3,1.4,30.7,32,93.6,2.6
+HIC,"High-income economies",Benchmark,3.8,5.5,0.9,33.3,45.9,106.3,1
