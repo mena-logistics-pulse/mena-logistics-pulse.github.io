@@ -2,7 +2,7 @@
 
 An open-data dashboard on supply chain, logistics, port efficiency, shipping connectivity, digital trade (electronic bills of lading / blockchain readiness) and innovation across the Middle East & North Africa (MENA) and the GCC, benchmarked against global leaders.
 
-**Live dashboard:** https://spssbusproject-sys.github.io/mena-logistics-pulse/
+**Live dashboard:** https://mena-logistics-pulse.github.io/
 
 Created by **Dr. Mohammad A. K. Al-Smairat**, Associate Professor of Supply Chain & Quality Management, Hamdan Bin Mohammad Smart University (HBMSU), Dubai, UAE.
 
@@ -33,7 +33,7 @@ Created by **Dr. Mohammad A. K. Al-Smairat**, Associate Professor of Supply Chai
 Each source's own terms of use apply to its data. The MENA Logistics Innovation Index is calculated in `calcs.js` (methodology on the page).
 
 ## Updating the data
-Replace the CSV files in `data/` with newer versions using the same column names, then commit. The page recalculates everything on load.
+Replace the CSV files with newer versions using the same column names, then commit. The page recalculates everything on load.
 
 ## Run locally
 ```
@@ -42,4 +42,4 @@ python3 -m http.server
 then open http://localhost:8000
 
 ## How to cite
-Al-Smairat, M. A. K. (2026). *MENA Supply Chain & Logistics Innovation Pulse* [Open-data dashboard]. https://spssbusproject-sys.github.io/mena-logistics-pulse/
+Al-Smairat, M. A. K. (2026). *MENA Supply Chain & Logistics Innovation Pulse* [Open-data dashboard]. https://mena-logistics-pulse.github.io/
