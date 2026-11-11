@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>MENA Logistics Pulse infographic</title><meta name="robots" content="noindex">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Noto+Kufi+Arabic:wght@400;700;800&display=swap">
+<style>
+*{box-sizing:border-box}body{margin:0;background:#050a1c;font-family:Inter,system-ui,sans-serif;color:#eaf1fb}
+.card{position:relative;width:1200px;height:627px;overflow:hidden;background:radial-gradient(circle at 15% 10%,#1d4ed8 0,transparent 45%),radial-gradient(circle at 90% 90%,#0e7490 0,transparent 45%),radial-gradient(circle at 85% 10%,#6d28d9 0,transparent 40%),#070d22;padding:38px 48px}
+.card:before{content:"";position:absolute;inset:0;background-image:radial-gradient(rgba(148,163,195,.16) 1px,transparent 1.2px);background-size:24px 24px}
+.top{position:relative;display:flex;justify-content:space-between;align-items:center;font-size:15px;letter-spacing:.12em;text-transform:uppercase;color:#2dd4bf;font-weight:600}
+.top .ar{font-family:'Noto Kufi Arabic';letter-spacing:0;text-transform:none;font-size:17px}
+.flag{display:none;width:34px;height:22px;margin-right:10px;vertical-align:-5px;border-radius:3px;overflow:hidden}.flag.on{display:inline-flex}
+.flag i{display:block}.flag .r{width:9px;background:#ef3340}.flag .s{flex:1;display:flex;flex-direction:column}.flag .s i{flex:1}
+.mid{position:relative;display:grid;grid-template-columns:1fr 1fr;gap:30px;margin-top:18px}
+.big{font-weight:800;font-size:112px;line-height:.9;background:linear-gradient(100deg,#fde68a,#fbbf24 40%,#2dd4bf);-webkit-background-clip:text;background-clip:text;color:transparent}
+.unit{font-size:24px;font-weight:600;margin-top:8px}
+.unit-ar{font-family:'Noto Kufi Arabic';direction:rtl;font-size:24px;font-weight:700;margin-top:6px;color:#c9d6ec}
+.chip{display:inline-block;margin-top:18px;padding:8px 16px;border-radius:999px;background:rgba(163,230,53,.14);color:#a3e635;font-weight:800;font-size:22px}
+.chip span{font-family:'Noto Kufi Arabic';font-weight:700;margin-left:10px;font-size:18px}
+.bars{display:flex;flex-direction:column;gap:9px;margin-top:4px}
+.bar{display:grid;grid-template-columns:120px 1fr 80px;align-items:center;gap:10px;font-size:16px;color:#c9d6ec}
+.bar b{display:block;height:24px;border-radius:7px;background:linear-gradient(90deg,#0ea5e9,#2dd4bf)}
+.bar.hi{color:#fff;font-weight:800}.bar.hi b{background:linear-gradient(90deg,#f59e0b,#fde68a);box-shadow:0 0 22px rgba(251,191,36,.55)}
+.bar em{font-style:normal;font-weight:700;color:#a3e635;text-align:right}
+.cap{font-size:14px;color:#93a4c3;margin-bottom:6px}.cap .ar{font-family:'Noto Kufi Arabic';float:right}
+.msg{position:relative;display:grid;grid-template-columns:1fr 1fr;gap:30px;margin-top:16px;font-size:19px;line-height:1.45}
+.msg .ar{font-family:'Noto Kufi Arabic';direction:rtl;text-align:right;font-size:20px;line-height:1.6}
+.foot{position:absolute;left:48px;right:48px;bottom:20px;display:flex;justify-content:space-between;font-size:12.5px;color:#93a4c3;border-top:1px solid rgba(148,163,195,.2);padding-top:12px}
+.foot b{color:#2dd4bf}
+.tiles{position:relative;display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:22px}.tile{padding:14px 18px;border-radius:16px;background:rgba(17,27,58,.6);border:1px solid rgba(148,163,195,.2)}.tile .n{font-size:30px;font-weight:800;color:#2dd4bf}.tile .t{font-size:15px;color:#c9d6ec;margin-top:2px}.tile .a{font-family:'Noto Kufi Arabic';direction:rtl;text-align:right;font-size:14px;color:#93a4c3;margin-top:4px}
+</style></head>
+<body><div class="card" id="c"></div>
+<script>
+/* Data comes from the URL hash: #<base64url(JSON)>. Fields: flag ("uae" or ""), k_en, k_ar, big, u_en, u_ar, chip_en, chip_ar, cap_en, cap_ar, bars [{l,v,t,hi}], m_en, m_ar (may contain <b>), tiles [{n,t,a}], src */
+function dec(h){h=h.replace(/-/g,'+').replace(/_/g,'/');while(h.length%4)h+='=';return JSON.parse(decodeURIComponent(escape(atob(h))))}
+var D=dec(location.hash.slice(1)),E=function(t){return String(t==null?'':t).replace(/&/g,'&amp;').replace(/</g,'&lt;')};
+var mx=Math.max.apply(null,D.bars.map(function(b){return +b.v}));
+var flag=D.flag==='uae'?'<span class="flag on"><i class="r"></i><span class="s"><i style="background:#00843d"></i><i style="background:#fff"></i><i style="background:#000"></i></span></span>':'';
+document.getElementById('c').innerHTML=
+'<div class="top"><div>'+flag+E(D.k_en)+'</div><div class="ar">'+E(D.k_ar)+'</div></div>'+
+'<div class="mid"><div><div class="big">'+E(D.big)+'</div><div class="unit">'+E(D.u_en)+'</div><div class="unit-ar">'+E(D.u_ar)+'</div><div class="chip">'+E(D.chip_en)+' <span>'+E(D.chip_ar)+'</span></div></div>'+
+'<div><div class="cap">'+E(D.cap_en)+'<span class="ar">'+E(D.cap_ar)+'</span></div><div class="bars">'+D.bars.map(function(b){return '<div class="bar'+(b.hi?' hi':'')+'"><span>'+E(b.l)+'</span><b style="width:'+Math.max(3,b.v/mx*100)+'%"></b><em>'+E(b.t)+'</em></div>'}).join('')+'</div></div></div>'+
+'<div class="msg"><div>'+D.m_en+'</div><div class="ar">'+D.m_ar+'</div></div>'+
+'<div class="tiles">'+(D.tiles||[]).map(function(t){return '<div class="tile"><div class="n">'+E(t.n)+'</div><div class="t">'+E(t.t)+'</div><div class="a">'+E(t.a)+'</div></div>'}).join('')+'</div>'+
+'<div class="foot"><span><b>MENA Supply Chain &amp; Logistics Innovation Pulse</b> · mena-logistics-pulse.github.io</span><span>Source: '+E(D.src)+' · Dr. Mohammad A.K. Alsmairat</span></div>';
+</script></body></html>
